@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask Example</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .footer-text {
+            font-size: 11pt;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex: 1;
+        }
+    </style>
+
+
+</head>
+<body>
+<ul>
+    <li><a href="{{ url_for('index') }}">Index</a></li>
+    <li><a href="{{ url_for('about') }}">About</a></li>
+    <li><a href="{{ url_for('exam') }}">Exam</a></li>
+</ul>
+
+{% block content %}{% endblock %}
+ <footer class="text-center mt-4">
+        <p class="footer-text">Exam 1 | Copyright 2024</p>
+    </footer>
+</body>
+</html>
