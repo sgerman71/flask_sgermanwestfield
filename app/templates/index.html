@@ -1,11 +1,13 @@
-<! define the document type and the html tag -->
-<! DOCTYPE html>
-<html lang="en">
-<head>
+<!-- This is the index.html file that will be rendered when the user visits the home page of the website. -->
+{% extends "base.html" %}
+
+<!-- This block will be displayed in the content block of the layout.html file -->
+{% block content %}
+
     <!-- Specifies the character encoding for the HTML document -->
     <meta charset="UTF-8">
     <!-- Title of the HTML document -->
-    <title>Sharon German Westfield</title>
+<title>Sharon German Westfield's Website</title>
 
     <!--line break in text -->
     <br>
@@ -14,25 +16,6 @@
     <img src="{{ url_for('static', filename='assets/number_1_Fan-Dallase.jpg') }}"
          alt="Sharon German Westfield No. 1 Cowboys Fan" width="500"/>
 
-
-    <!-- Link to Bootstrap CSS for styling -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* style for the footer */
-        .footer-text {
-            font-size: 11pt;
-        }
-        /* layout for the body to ensure footer stays at the bottom */
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        main {
-            flex: 1;
-        }
-    </style>
-
-<h1>Welcome to Sharon German Westfield's Website Created September 15, 2024</h1>
+<!--end the block content -->
 
 {% endblock %}

@@ -1,14 +1,12 @@
-<!--this line indicates that the current page is an extension of the base.html file #}
-{% extends 'base.html' %}
+<!-- This is the about page for the website. -->
+{% extends "base.html" %}
 
-{# this line indicates that the content of the block will be displayed in the content block of the base.html file #}
+<!-- This block will be displayed in the content block of the layout.html file -->
 {% block content %}
 
-{# this line indicates the highest section level block will be displayed in the content block of the base.html file #}
-<h1>Exam 1</h1>
+<!-- Header for the about page -->
+<h1>About Me</h1>
 
-{# this line indicating the image content that will be displayed on the page #}
-#<img src="{{ url_for('static', filename='assets/number 1 Fan-Dallase.jpg') }}" alt="Sharon German Westfield No. 1 Cowboys Fan" width="500">
+<!-- end the block content -->
 
-{# end of content block #}
 {% endblock %}

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <!-- Specifies the character encoding for the HTML document -->
     <meta charset="UTF-8">
 
@@ -9,9 +8,8 @@
     <title>Flask Example</title>
 
     <!-- Link to Bootstrap CSS for styling -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-
         /* style for the footer */
         .footer-text {
             font-size: 11pt;
@@ -26,31 +24,30 @@
             flex: 1;
         }
     </style>
-
-
 </head>
 <body>
 
 <!-- Navigation links -->
-<ul>
-    <!-- Link to the index page -->
-    <li><a href="{{ url_for('index') }}">Index</a></li>
+<nav>
+    <ul>
+        <!-- Link to the index page -->
+        <li><a href="{{ url_for('index') }}">Home</a></li>
 
-    <!-- Link to the about page -->
-    <li><a href="{{ url_for('about') }}">About</a></li>
+        <!-- Link to the about page -->
+        <li><a href="{{ url_for('about') }}">About</a></li>
 
-    <!-- Link to the exam page -->
-    <li><a href="{{ url_for('exam') }}">Exam</a></li>
-</ul>
+        <!-- Link to the exam page -->
+        <li><a href="{{ url_for('exam') }}">Exam</a></li>
+    </ul>
+</nav>
 
 <!-- Content block -->
 {% block content %}{% endblock %}
 
 <!-- Footer text that is centered -->
- <footer class="text-center mt-4">
-
-     <!-- Footer text is Exam 1 Copyright 2024-->
-        <p class="footer-text">Exam 1 | Copyright 2024</p>
-    </footer>
+<footer class="text-center mt-4">
+    <!-- Footer text is Exam 1 Copyright 2024 -->
+    <p class="footer-text">Sharon German Westfield | Copyright 2024</p>
+</footer>
 </body>
 </html>
