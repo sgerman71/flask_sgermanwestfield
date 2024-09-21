@@ -1,7 +1,11 @@
+{# This line indicates that the current page is an extension of the base.html file #}
 {% extends 'base.html' %}
 
+
+{# This line indicates that the content of the block will be displayed in the content block of the base.html file #}
 {% block content %}
 
+{# br indicates a line break in text #}
 <br>
 
     Hello World! My name is Sharon Westfield.  You made an excellent guess from the picture .....
@@ -11,14 +15,18 @@
     And I was born in Georgia and I hate the Georgia Bulldogs and the Atlanta Falcons.
     Hate is a strong word therefore, I strongly dislike the Georgia Bulldog and the Atlanta Falcons.
 
+{ # <p> indicates a paragraph in text #}
 <p>This course is awesome and I am learning a lot.  I am excited to learn more. At work the last year, I have come into
     several instance where I needed to know how to code.  I am excited to learn more and be able to apply it to my job.
     Moreover the github copilot tool is a great tool to use.  I have used it on several occasions recently to write a sql code
     for a report that I was working on for my job this week.
+
+    { # <p> indicates a paragraph in text #}
 <p>In the next two years, I intend on making a career change.  The one aspect of my job that love is data analytics and accounting.
     Therefore, I spend most of time using excel. I would love to start using sql and coding more often in reporting.
 The one aspect of my job which is challenging is supervising people. People are motivated by work in vastly different ways.
     I have learned that I have to be flexible in my approach to managing people.  I have to be able to adapt to the needs of my team.
     I have to be able to communicate with my team in a way that they understand.  All which of which are challenging for me
 
+    { # end of content block #}
     {% endblock %}
