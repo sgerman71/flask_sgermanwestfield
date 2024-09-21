@@ -3,7 +3,7 @@ from .import app
 
 
 # Define the route for the home page
-@app.route('/index')
+@app.route('/')
 def index():
     return render_template('index.html')
 
