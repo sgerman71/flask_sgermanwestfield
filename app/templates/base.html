@@ -1,47 +1,105 @@
+<!-- Declares the document type and version of HTML (HTML5 in this case) -->
 <!DOCTYPE html>
+
+<!-- Sets the language of the document to English -->
 <html lang="en">
 
+<!-- Head section containing metadata and links to stylesheets -->
 <head>
+    <!-- Specifies the character encoding for the HTML document as UTF-8 -->
     <meta charset="UTF-8">
+
+    <!-- titlle of the HTML document diplays in the browser tab -->
     <title>Flask Example</title>
+
+    <!-- Links to the Bootstrap CSS library for styling components -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Styles for the footer text and body of the page -->
     <style>
-        .footer-text {
-            font-size: 11pt;
-        }
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        main {
-            flex: 1;
-        }
+
+        /* Sets the font size of the footer text */
+      .footer-text {
+          font-size: 11pt;
+      }        body {
+
+            /* Uses flexbox layout for the body */
+          display: flex;
+
+/* Aligns children (main content and footer) vertically */
+          flex-direction: column;
+
+/* Ensures the body takes at least the full height of the viewport */
+          min-height: 100vh;
+
+ /* Allows the main content area to grow and fill available space */
+      }
+      main {
+          flex: 1;
+      }
     </style>
 </head>
 <body>
 
 <!-- Navigation bar using Bootstrap -->
+<!-- Creates a responsive navigation bar with light background -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <!-- Brand name link that points to the index route -->
     <a class="navbar-brand" href="{{ url_for('index') }}">Flask App</a>
+
+    <!-- Button for toggling the navbar on smaller screens -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+        <!-- Icon for the navbar toggler -->
         <span class="navbar-toggler-icon"></span>
+
+        <!-- End of the button element -->
     </button>
+
+    <!-- Navigation links that are collapsed on smaller screens -->
     <div class="collapse navbar-collapse" id="navbarNav">
+
+        <!-- Unordered list of navigation links -->
         <ul class="navbar-nav">
+
+            <!-- List item with a link to the index route -->
             <li class="nav-item">
+
+                <!-- Link to the index route with text "Home" -->
                 <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+
+                <!-- End of the list item -->
             </li>
+
+            <!-- List item with a link to the about route -->
             <li class="nav-item">
+
+                <!-- Link to the about route with text "About" -->
                 <a class="nav-link" href="{{ url_for('about') }}">About</a>
+
+                <!-- End of the list item -->
             </li>
+
+            <!-- List item with a link to the exam route -->
             <li class="nav-item">
+
+                <!-- Link to the exam route with text "Exam" -->
                 <a class="nav-link" href="{{ url_for('exam') }}">Exam</a>
+
+                <!-- End of the list item -->
             </li>
+
+            <!-- End of the unordered list -->
         </ul>
+
+        <!-- End of the div element -->
     </div>
+
+    <!-- End of the navigation bar -->
 </nav>
+
 
 <!-- Content block -->
 <main>
@@ -50,13 +108,24 @@
 
 <!-- Footer text that is centered -->
 <footer class="text-center mt-4">
+
+    <!-- Paragraph element with the footer text -->
     <p class="footer-text">Sharon German Westfield | Copyright 2024</p>
+
+    <!-- End of the footer -->
 </footer>
 
+<!-- Bootstrap JavaScript libraries for responsive components -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<!-- Popper.js library for dropdowns and tooltips -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+
+<!-- Bootstrap JavaScript library for responsive components -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+
+<!-- End of the HTML document -->
 </body>
 </html>
 
