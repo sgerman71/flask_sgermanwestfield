@@ -5,5 +5,3 @@ from app import app
 if __name__ == '__main__':
     # start the Flask development server in debug mode
     app.run(debug=True)
-
-
